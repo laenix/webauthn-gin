@@ -1,0 +1,8 @@
+mysql:
+  driverName: mysql
+  host: 10.3.0.95
+  port: 31841
+  database: webauthn
+  username: root
+  password: root
+  charset: utf8
