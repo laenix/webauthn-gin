@@ -35,6 +35,7 @@ func InitDB() *gorm.DB {
 	//自动建立表
 	db.AutoMigrate(&model.User{})
 	db.AutoMigrate(&model.Certificate{})
+	db.AutoMigrate(&model.Challenge{})
 	DB = db
 	return db
 }
