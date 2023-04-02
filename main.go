@@ -18,9 +18,9 @@ func main() {
 	database.InitDB()
 	r := gin.Default()
 	wconfig := &webauthn.Config{
-		RPDisplayName: "Go Webauthn",                // Display Name for your site
-		RPID:          "localhost",                  // Generally the FQDN for your site
-		RPOrigins:     []string{"http://localhost"}, // The origin URLs allowed for WebAuthn requests
+		RPDisplayName: "Go Webauthn",                          // Display Name for your site
+		RPID:          "webauthn.sylu.site",                   // Generally the FQDN for your site
+		RPOrigins:     []string{"https://webauthn.sylu.site"}, // The origin URLs allowed for WebAuthn requests
 	}
 	var err error
 	W, err = webauthn.New(wconfig)
